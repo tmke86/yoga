@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Gallery with Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <div class="main-display">
+            <button id="prev" class="nav-arrow" aria-label="Previous Image">←</button>
+            <div class="image-and-text">
+                <img id="currentImage" loading="lazy" src="" alt="Main Image">
+                <p id="imageDescription" class="description" aria-live="polite"></p>
+            </div>
+            <button id="next" class="nav-arrow" aria-label="Next Image">→</button>
+        </div>
+        <div class="categories">
+            <div class="category" id="warmup"></div>
+            <div class="category" id="core-flow"></div>
+            <div class="category" id="cool-down"></div>
+        </div>
+    </div>
+    <script src="config.js" type="module"></script>
+    <script src="thumbnailHandler.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
